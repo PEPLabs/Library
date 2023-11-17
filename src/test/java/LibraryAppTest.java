@@ -217,7 +217,7 @@ public class LibraryAppTest {
         Mockito.verify(mockBookDAO).insertBook(b4);
     }
     /**
-     * When addBook is called and the mockBookDAO already contains the author, the method should return null
+     * When addBook is called and the mockBookDAO already contains the book, the method should return null
      * and the insertBook method of BookDAO should not have been called.
      */
     @Test
