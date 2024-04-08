@@ -101,7 +101,7 @@ public class BookDAO {
     }
     /**
      * TODO: retrieve all books from the Book table with copies_available over zero.
-     * You only need to change the sql String and leverage PreparedStatement's setString and setInt methods.
+     * You only need to change the sql String with a query that utilizes a WHERE clause.
      * @returnall books with book count > 0.
      */
     public List<Book> getBooksWithBookCountOverZero(){
@@ -111,8 +111,6 @@ public class BookDAO {
             //Write SQL logic here
             String sql = "change me";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-
-            //write preparedStatement's setInt method here.
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
